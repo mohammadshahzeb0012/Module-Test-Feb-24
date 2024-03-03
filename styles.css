@@ -18,7 +18,9 @@ body {
 #crypto-data td img {
     width: 35px;
 }
-
+.container{
+    margin: 5%;
+}
 /* Styles for input and sorting buttons */
 .input {
     display: flex;
