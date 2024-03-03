@@ -1,0 +1,74 @@
+/* Global reset and styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Body styles for centering content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for images inside table cells */
+#crypto-data td img {
+    width: 35px;
+}
+
+/* Styles for input and sorting buttons */
+.input {
+    display: flex;
+    gap: 18px;
+}
+
+#search {
+    height: 50px;
+    border: 2px solid #8e8e8e;
+    border-radius: 2px;
+    width: 350px;
+    padding: 10px;
+}
+
+#sort1, #sort2 {
+    height: 50px;
+    border: 2px solid #8e8e8e;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+/* Hover effect for sorting buttons */
+#sort1:hover, #sort2:hover {
+    background-color: #8e8e8e;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+/* Styling for table cells */
+td {
+    height: 70px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #585859;
+}
+
+/* Additional styling for the first cell of each row */
+#crypto-data tr td:first-child {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 2px;
+    align-items: center;
+}
+
+/* Styling for positive and negative values */
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}
