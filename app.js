@@ -5,16 +5,20 @@ const table = document.getElementById('crypto-data');
 const search = document.getElementById('search');
 const sortByMktCap = document.getElementById('sort1');
 const sortByPercentage = document.getElementById('sort2');
+const loader = document.getElementById('loader'); 
 
 // Function to fetch data
 async function fetchedData() {
     try {
+        loader.style.display = "block";
         const response = await fetch(Api);
         data = await response.json();
         showData(data);
         addEventListeners(); // Add event listeners after data is fetched
     } catch (e) {
         alert(e);
+    } finally {
+        loader.style.display = "none"; // Hide loader after data is fetched
     }
 }
 
